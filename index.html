@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html land = 'en'>
+<head>
+	<meta charset = 'utf-8'>
+	<link rel = 'stylesheet' type = 'text/css' href = 'static/style.css'/>
+	<title>Cat Api</title>
+</head>
+	<div class = 'results'>
+		<div id = 'cat_results' class = 'result'>
+			<img src = ' data:image, {{ img_data }}'/>
+		</div>
+	<script type = 'text/javascript' src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'> </script>
+	<script type = text/javascript>
+		$(function() {
+			$('#cat_button').on('click',function(event){
+				event.preventDefault()
+				$.getJSON('/', {},
+					function(data) {});
+				return true;
+			});
+		});
+	</script>
+
+	<div class = 'buttons'>
+		<a href = #>
+			<button class = 'btn btn-default' id = 'cat_button' onclick = 'index_html()'>Generate Cats</button>
+		</a>
+	</div>
+	<script src="static/script.js"></script>
+</body>
+</html>
